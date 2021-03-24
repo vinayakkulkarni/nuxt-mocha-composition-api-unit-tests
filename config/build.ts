@@ -19,6 +19,7 @@ const build: NuxtOptionsBuild = {
     presets() {
       return [
         '@babel/preset-env',
+        '@babel/preset-typescript',
         ['@nuxt/babel-preset-app', { corejs: { version: 3 } }],
       ];
     },
