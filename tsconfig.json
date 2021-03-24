@@ -29,6 +29,23 @@
       "@types/power-assert"
     ]
   },
+  "include": [
+    // JavaScript
+    "components/**/*.js",
+    "plugins/**/*.js",
+    "nuxt.config.js",
+    // Vue
+    "components/**/*.vue",
+    "pages/**/*.vue",
+    "layouts/**/*.vue",
+    // TypeScript
+    "shims/**/*.d.ts",
+    "components/**/*.ts",
+    "plugins/**/*.ts",
+    "nuxt.config.ts",
+    // Tests
+    "test/spec/**/*.ts",
+  ],
   "exclude": [
     "node_modules",
     ".nuxt",

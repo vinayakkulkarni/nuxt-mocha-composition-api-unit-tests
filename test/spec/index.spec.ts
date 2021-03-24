@@ -7,14 +7,10 @@ describe('Index page', () => {
   let wrapper: Wrapper<Vue> = {} as Wrapper<Vue>;
 
   beforeEach(() => {
-    wrapper = mount(Index, {
-      stubs: {
-        NuxtLink: true,
-      },
-    });
+    wrapper = mount(Index);
   });
 
-  describe('Fetch list of all projects', () => {
+  describe('Fetch list of all users', () => {
     it('is a vue instance', () => {
       assert.equal(wrapper.isVueInstance(), true);
     });
