@@ -7,7 +7,8 @@
     "build": "nuxt build",
     "start": "nuxt start",
     "generate": "nuxt generate",
-    "test": "mochapack --webpack-config node_modules/nuxt/webpack.config.js --require test/helpers/setup.js test/spec/**/*.{ts,js}",
+    "test": "mochapack --webpack-config node_modules/nuxt/webpack.config.js --require ./test/helpers/setup.ts ./test/spec/**/*.{ts,js}", 
+    "test:unit": "mochapack --webpack-config node_modules/nuxt/webpack.config.js --require test/helpers/setup.js test/spec/**/*.{ts,js}",
     "lint:js": "eslint --ext \".js,.vue\" --ignore-path .gitignore .",
     "lint:style": "stylelint \"**/*.{vue,css}\" --ignore-path .gitignore",
     "lint": "npm run lint:js && npm run lint:style"
